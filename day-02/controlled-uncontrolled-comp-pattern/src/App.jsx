@@ -9,21 +9,28 @@ import ControlledFeedbackForm from "./controlled/ControlledFeedbackForm";
 import UncontrolledFeedbackForm from "./uncontrolled/UncontrolledFeedbackForm";
 
 import UncontrolledFormNoRef from "./uncontrolled/UncontrolledFormNoRef";
+import ControlledContactForm from "./controlled/ControlledContactForm";
+import UncontrolledContactFormref from "./uncontrolled/UncontrolledContactFormref";
+import UncontrolledContactformNoref from "./uncontrolled/UncontrolledContactformNoref";
 
 function App() {
   return (
     <div className="flex flex-col items-center">
-      <Counter />
-      <AutoFocusInput />
-      <CounterWithRef />
+      {/* <Counter /> */}
+      {/* <AutoFocusInput /> */}
+      {/* <CounterWithRef /> */}
 
-      <FeedbackForm />
+      {/* <FeedbackForm /> */}
 
-      <ControlledFeedbackForm />
+      {/* <ControlledFeedbackForm /> */}
 
-      <UncontrolledFeedbackForm />
+      {/* <UncontrolledFeedbackForm /> */}
 
-      <UncontrolledFormNoRef />
+      {/* <UncontrolledFormNoRef /> */}
+
+      <ControlledContactForm />
+      <UncontrolledContactFormref />
+      <UncontrolledContactformNoref />
     </div>
   );
 }
