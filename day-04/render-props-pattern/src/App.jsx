@@ -4,11 +4,12 @@
 // import MouseTracker from "./with-pattern/MouseTracker";
 
 import MouseTrackerWithChildren from "./with-pattern/using-children/MouseTrackerWithChildren";
+import ToggleComponent from "./with-pattern/using-children/ToggleComponent";
 
 function App() {
-    return (
-        <div className="flex flex-col items-center m-2">
-            {/*<CarTracker />
+  return (
+    <div className="flex flex-col items-center m-2">
+      {/*<CarTracker />
       <BikeTracker />
 
             <MouseTracker
@@ -27,7 +28,7 @@ function App() {
                 )}
             />*/}
 
-            <MouseTrackerWithChildren>
+      {/* <MouseTrackerWithChildren>
                 {({ x, y }) => (
                     <p>
                         🚗 Car is at ({x}, {y})
@@ -41,9 +42,16 @@ function App() {
                         🏍️ Bike is at ({x}, {y})
                     </p>
                 )}
-            </MouseTrackerWithChildren>
-        </div>
-    );
+            </MouseTrackerWithChildren> */}
+      <ToggleComponent>
+        {(isToggled) => (
+          <button className="px-4 py-2 bg-blue-500 text-white rounded">
+            {isToggled ? "Hide" : "Show"}
+          </button>
+        )}
+      </ToggleComponent>
+    </div>
+  );
 }
 
 export default App;
