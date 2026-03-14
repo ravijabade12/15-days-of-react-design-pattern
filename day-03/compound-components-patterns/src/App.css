@@ -20,3 +20,10 @@
 .accordion-item { margin-bottom: 0.5rem; border: 1px solid #ddd; border-radius: 4px; }
 .accordion-title { width: 100%; text-align: left; padding: 0.5rem; font-weight: bold; cursor: pointer; background: #f9f9f9; border: none; }
 .accordion-content { padding: 0.5rem; background: #fff; }
+
+.tabs { width: 100%; max-width: 440px; border: 1px solid #ddd; border-radius: 8px; overflow: hidden; }
+.tab-list { display: flex; border-bottom: 1px solid #ddd; background: #f7f7f7; }
+.tab { flex: 1; padding: 0.75rem 1rem; border: none; background: transparent; cursor: pointer; font-weight: bold; }
+.tab.active { background: white; border-bottom: 2px solid #0078d4; }
+.tab-panels { padding: 1rem; }
+.tab-panel { padding: 0; }
