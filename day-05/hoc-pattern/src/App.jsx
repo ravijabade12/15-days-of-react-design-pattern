@@ -1,9 +1,9 @@
-import MovieWithHOC from "./movies/MovieWithHOC";
+import AdminDashboard from "./movies/AdminDashboard";
 
 function App() {
   return (
-    <div className="flex flex-col items-center">
-      <MovieWithHOC />
+    <div>
+      <AdminDashboard />
     </div>
   );
 }
