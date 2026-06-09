@@ -1,20 +1,18 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 import { BrandContext } from "../context";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 const BrandProvider = ({ children }) => {
   const [brand, setBrand] = useState(null);
 
   useEffect(() => {
     // FAKE an API Call
-    const data = {"name": "tapaScript", "color": "#765G45"}
+    const data = { name: "tapaScript", color: "#765G45" };
     setBrand(data);
   }, []);
 
   return (
-    <BrandContext value={brand}>
-      {children}
-    </BrandContext>
+    <BrandContext.Provider value={brand}>{children}</BrandContext.Provider>
   );
 };
 BrandProvider.propTypes = {
